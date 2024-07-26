@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -14,9 +14,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    text-align:right;
-    letter-spacing: normal;
+    
+    padding: 0px 20px;
+   
+ 
 }
 
 .profile-pic {
