@@ -1,4 +1,4 @@
-# Página Web Personal de Lionel Valentín
+# Página Web Personal de Lionel Valentin
 
 ¡Bienvenidos a mi repositorio! Aquí encontrarás el código fuente de mi página web personal.
 
