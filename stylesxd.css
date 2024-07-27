@@ -1,0 +1,66 @@
+/* Reset de margenes y padding */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/noa.png'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija mientras se desplaza el contenido */
+    color: #ffffff; /* Color de texto blanco para contraste */
+    font-family: 'Eczar', sans-serif; /* Tipografía general */
+}
+/* Contenedor principal de la barra de navegacion */
+.navbar {
+    display: flex;
+    font-family: 'Eczar', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000; /* Color de fondo */
+    padding: 0px 20px; /* Espaciado interno */
+    text-align: center; /* centrar xd */
+    border-bottom: 1px solid #ffffff; /* Color y grosor del marco inferior */
+}
+
+.icono-logo {
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+/* Contenedor de navegacion */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para la lista de enlaces de navegacion */
+.nav-links {
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox para alineacion horizontal */
+    gap: 15px;
+}
+
+/* Estilo para los enlaces */
+.nav-links a {
+    color: white; /* Color del texto */
+    letter-spacing: 1.5px;
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 16px; /* Tamaño de la fuente */
+    padding: 5px 10px;
+    margin: 0 20px;
+}
+
+/* Estilo para el estado hover de los enlaces */
+.navbar li:nth-child(1) a:hover,
+.navbar li:nth-child(5) a:hover {
+    text-decoration: underline; /* Subrayar solo los elementos especificados en hover */
+}
+
+
