@@ -17,7 +17,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #000000; /* Color de fondo */
-    padding: 0px 20px; /* Espaciado interno */
+    padding: 0px 30px; /* Espaciado interno */
     text-align: center; /* centrar xd */
     border-bottom: 1px solid #ffffff; /* Color y grosor del marco inferior */
 }
@@ -31,11 +31,16 @@ body {
     width: 40px;
     height: 40px;
     margin-top: 10px;
+    position: relative;
 }
 /* Contenedor de navegacion */
 nav {
     display: flex;
     align-items: center;
+}
+
+.nav-links li {
+    margin-right: 40px; /* Agrega espacio extra a la derecha de cada elemento de la lista */
 }
 
 /* Estilo para la lista de enlaces de navegacion */
@@ -54,7 +59,6 @@ nav {
     text-decoration: none; /* Quita el subrayado */
     font-size: 16px; /* Tamaño de la fuente */
     padding: 5px 10px;
-    margin: 0 20px;
 }
 
 /* Estilo para el estado hover de los enlaces */
@@ -62,5 +66,75 @@ nav {
 .navbar li:nth-child(5) a:hover {
     text-decoration: underline; /* Subrayar solo los elementos especificados en hover */
 }
+.nav-links li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento de la lista */
+}
+/* Estilos para el texto principal */
+.content {
+    position: relative; /* Posicion relativa para que los elementos absolutos se posicionen dentro de este contenedor */
+    height: 65vh; /* Altura del contenedor */
+    text-align: left;
+}
 
+.main-text {
+    position: absolute;
+    top: 300px; /* Ajusta esta propiedad para mover verticalmente */
+    left: 130px;
+    font-size: 130px; /* Tamaño de fuente relativo al ancho de la ventana */
+    font-family: 'Kaisei Decol', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px; /* Espaciado entre letras relativo al ancho de la ventana */
+    line-height: 1.0; /* Ajuste de la altura de línea */
+    margin: 0; /* Eliminar el margen predeterminado */
+}
 
+.sub-text {
+    position: absolute;
+    top: 580px; /* Ajusta esta propiedad para mover verticalmente */
+    left: 170px;
+    font-size: 20px; /* Tamaño de fuente relativo al ancho de la ventana */
+    font-family: 'Roboto', sans-serif; /* Tipografía específica */
+    color: #ffffff; /* Color del texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto para mejorar legibilidad */
+    letter-spacing: 5px; /* Espaciado entre letras relativo al ancho de la ventana */
+    margin: 0; /* Eliminar el margen predeterminado */
+}
+
+@media (max-width: 600px) {
+    .main-text {
+        font-size: 10vw; /* Aumentar el tamaño de fuente en pantallas más pequeñas */
+    }
+    .sub-text {
+        font-size: 4vw; /* Aumentar el tamaño de fuente en pantallas más pequeñas */
+    }
+}
+/* Estilos para el pie de página */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px; /* Espaciado interno */
+    position: absolute; /* Posicion absoluta */
+    bottom: 0; /* Pegado al fondo */
+    width: 100%; /* Ancho completo */
+    color: #ffffff; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+.footer-left {
+    font-size: 14px; /* Tamaño de la fuente para el texto de copyright */
+}
+
+.footer-right {
+    display: flex;
+}
+.footer-right a {
+    margin-left: 20px; /* Espaciado entre los íconos de redes sociales */
+    font-size: 48px; /* Tamaño de los íconos */
+}
+
+.footer-right img {
+    width: 48px; /* Tamaño de los íconos */
+    height: 48px;
+}
