@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/adrian-newell-tdUttAX83u8-unsplash.jpg);
+    background-image: url(/daniel-sessler-MyO9JWkPq60-unsplash.jpg);
+    background-image: url(/noa.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+    font-family: 'Eczar', sans-serif;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    font-family: 'Eczar', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 0px 30px;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.icono-logo {
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: -17px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 17px 20px;
+}
+
+.navbar li:nth-child(1) a:hover,
+.navbar li:nth-child(5) a:hover {
+    text-decoration: underline;
+    background-color: #000000;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.content {
+    position: relative;
+    height: 65vh;
+    text-align: left;
+}
+
+.main-text {
+    position: absolute;
+    top: 300px;
+    left: 130px;
+    font-size: 130px;
+    font-family: 'Kaisei Decol', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    line-height: 1.0;
+    margin: 0;
+}
+
+.sub-text {
+    position: absolute;
+    top: 580px;
+    left: 170px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .main-text {
+        font-size: 10vw;
+    }
+    .sub-text {
+        font-size: 4vw;
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 98.5%;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Sedan SC', sans-serif;
+    bottom: 0px;
+}
+
+.footer-left {
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.footer-right {
+    display: flex;
+}
+
+.footer-right a {
+    margin-left: 30px;
+    font-size: 18px;
+    width: 38px;
+    height: 38px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 150px;
+    z-index: 1;
+    font-family: "Saira", sans-serif;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Saira', sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff67;
+    text-decoration: none;
+}
