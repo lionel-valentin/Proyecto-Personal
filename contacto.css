@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+    font-family: 'Eczar', sans-serif;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    font-family: 'Eczar', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 0px 30px;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+    z-index: 1000;
+}
+
+.icono-logo {
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: -17px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 17px 20px;
+}
+
+.navbar li:nth-child(1) a:hover,
+.navbar li:nth-child(5) a:hover {
+    text-decoration: underline;
+    background-color: #000000;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.content {
+    position: relative;
+    height: 65vh;
+    text-align: left;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('/fonts/PP\ Hatton\ Medium\ 500.otf') format('truetype');
+}
+
+.main-text {
+    position: absolute;
+    top: 90px; /* Mantiene la posición vertical */
+    left: 76%; /* Coloca el texto en el centro de la segunda mitad */
+    transform: translateX(-50%); /* Desplaza el texto hacia la izquierda para centrarlo */
+    font-size: 115px;
+    font-family: 'Hatton', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    line-height: 1.0;
+    margin: 0;
+}
+
+.contact-info {
+    position: absolute;
+    top: 320px; /* Ajusta la posición vertical según sea necesario */
+    left: 72%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centra el contenido */
+    color: #ffffff; /* Color del texto */
+    font-size: 25px; /* Tamaño de fuente por defecto para el contenido */
+    text-align: left; /* Alineación a la izquierda */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    margin: 0; /* Sin margen */
+    font-family: 'Hatton', sans-serif;
+}
+
+.info-title {
+    font-size: 45px; /* Tamaño de fuente para los títulos */
+    margin: 5px 0; /* Espacio entre los títulos */
+    font-family: 'Hatton', sans-serif;
+}
+
+.info-contents p {
+    margin: 5px 0; /* Espacio entre líneas del contenido */
+}
+
+@media (max-width: 600px) {
+    .main-text {
+        font-size: 10vw;
+    }
+    .sub-text {
+        font-size: 4vw;
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 98.5%;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Sedan SC', sans-serif;
+}
+
+.footer-left {
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.footer-right {
+    display: flex;
+}
+
+.footer-right a {
+    margin-left: 30px;
+    font-size: 18px;
+    width: 38px;
+    height: 38px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 150px;
+    z-index: 1;
+    font-family: "Saira", sans-serif;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Saira', sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff67;
+    text-decoration: none;
+}
+
+
+.image-container {
+    width: 50vw; /* Ocupa la mitad del ancho de la ventana */
+    height: 140vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+    position: fixed; /* Mantiene el contenedor fijo en la ventana */
+    left: 0; /* Alinea el contenedor a la izquierda */
+    top: 0; /* Alinea el contenedor a la parte superior */
+    z-index: 1;
+}
+
+.contact-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+    position: absolute; /* Permite que la imagen se ajuste dentro del contenedor */
+    left: 0; /* Alinea la imagen a la izquierda */
+    top: 63px; /* Alinea la imagen a la parte superior */
+    z-index: 1;
+}
+
