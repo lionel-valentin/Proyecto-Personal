@@ -1,3 +1,6 @@
+html {
+    font-size: 16px; /* Esto define 1rem = 16px */
+}
 body {
     margin: 0;
     padding: 0;
@@ -17,7 +20,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #000000;
-    padding: 0px 30px;
+    padding: 0 1.875rem; /* 30px */
     text-align: center;
     border-bottom: 1px solid #ffffff;
     z-index: 1000;
@@ -29,10 +32,10 @@ body {
     object-fit: cover;
     border-radius: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
-    margin-left: -17px;
+    width: 2.5rem; /* 40px */
+    height: 2.5rem; /* 40px */
+    margin-top: 0.625rem; /* 10px */
+    margin-left: -1.0625rem; /* -17px */
     position: relative;
 }
 
@@ -42,21 +45,21 @@ nav {
 }
 
 .nav-links li {
-    margin-right: 40px;
+    margin-right: 2.5rem; /* 40px */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 0.9375rem; /* 15px */
 }
 
 .nav-links a {
     color: white;
     letter-spacing: 1.5px;
     text-decoration: none;
-    font-size: 16px;
-    padding: 17px 20px;
+    font-size: 1rem; /* 16px */
+    padding: 1.0625rem 1.25rem; /* 17px 20px */
 }
 
 .navbar li:nth-child(1) a:hover,
@@ -82,39 +85,48 @@ nav {
 
 .main-text {
     position: absolute;
-    top: 90px; /* Mantiene la posición vertical */
-    left: 76%; /* Coloca el texto en el centro de la segunda mitad */
-    transform: translateX(-50%); /* Desplaza el texto hacia la izquierda para centrarlo */
-    font-size: 115px;
+    top: 5.625rem; /* 90px */
+    left: 76%; /* Mantener en porcentaje */
+    transform: translateX(-50%);
+    font-size: 7.1875rem; /* 115px */
     font-family: 'Hatton', sans-serif;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
     line-height: 1.0;
     margin: 0;
+    text-align: left;
+    z-index: 3;
 }
 
 .contact-info {
-    position: absolute;
-    top: 320px; /* Ajusta la posición vertical según sea necesario */
-    left: 72%; /* Centra horizontalmente */
-    transform: translateX(-50%); /* Centra el contenido */
-    color: #ffffff; /* Color del texto */
-    font-size: 25px; /* Tamaño de fuente por defecto para el contenido */
-    text-align: left; /* Alineación a la izquierda */
-    letter-spacing: 1px; /* Espaciado entre letras */
-    margin: 0; /* Sin margen */
+    position: fixed;
+    top: 23.75rem; /* 380px */
+    left: 72%; /* Mantener en porcentaje */
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 1.5625rem; /* 25px */
+    text-align: left;
+    letter-spacing: 1px;
+    margin: 0;
     font-family: 'Hatton', sans-serif;
+    line-height: 1;
+    z-index: 2;
+}
+
+.info-item {
+    margin-bottom: 5rem; /* 80px */
+    line-height: 1.1;
 }
 
 .info-title {
-    font-size: 45px; /* Tamaño de fuente para los títulos */
-    margin: 5px 0; /* Espacio entre los títulos */
+    font-size: 2.8125rem; /* 45px */
+    margin: 0.3125rem 0; /* 5px */
     font-family: 'Hatton', sans-serif;
 }
 
 .info-contents p {
-    margin: 5px 0; /* Espacio entre líneas del contenido */
+    margin: 0.3125rem 0; /* 5px */
 }
 
 @media (max-width: 600px) {
@@ -130,18 +142,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 0px;
+    padding: 0;
     position: absolute;
     bottom: 0;
     width: 98.5%;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     font-family: 'Sedan SC', sans-serif;
 }
 
 .footer-left {
-    font-size: 22px;
-    margin-left: 20px;
+    font-size: 1.375rem; /* 22px */
+    margin-left: 1.25rem; /* 20px */
 }
 
 .footer-right {
@@ -149,10 +161,10 @@ nav {
 }
 
 .footer-right a {
-    margin-left: 30px;
-    font-size: 18px;
-    width: 38px;
-    height: 38px;
+    margin-left: 1.875rem; /* 30px */
+    font-size: 1.125rem; /* 18px */
+    width: 2.375rem; /* 38px */
+    height: 2.375rem; /* 38px */
 }
 
 .dropdown {
@@ -163,10 +175,10 @@ nav {
     display: none;
     position: absolute;
     background-color: #000000;
-    min-width: 150px;
+    min-width: 9.375rem; /* 150px */
     z-index: 1;
     font-family: "Saira", sans-serif;
-    top: 45px;
+    top: 2.8125rem; /* 45px */
     left: 50%;
     transform: translateX(-50%);
     border-left: 1px solid #ffffff;
@@ -180,7 +192,7 @@ nav {
 
 .dropdown-content a {
     color: white;
-    padding: 5px 15px;
+    padding: 0.3125rem 0.9375rem; /* 5px 15px */
     text-decoration: none;
     display: block;
     font-family: 'Saira', sans-serif;
@@ -191,24 +203,22 @@ nav {
     text-decoration: none;
 }
 
-
 .image-container {
-    width: 50vw; /* Ocupa la mitad del ancho de la ventana */
-    height: 140vh; /* Ocupa toda la altura de la ventana */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
-    position: fixed; /* Mantiene el contenedor fijo en la ventana */
-    left: 0; /* Alinea el contenedor a la izquierda */
-    top: 0; /* Alinea el contenedor a la parte superior */
+    width: 50vw; /* Mantener en % para ser responsivo */
+    height: 140vh; /* Mantener en vh para ser responsivo */
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
     z-index: 1;
 }
 
 .contact-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
-    position: absolute; /* Permite que la imagen se ajuste dentro del contenedor */
-    left: 0; /* Alinea la imagen a la izquierda */
-    top: 63px; /* Alinea la imagen a la parte superior */
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 63px; /* Puedes cambiar esto a unidades relativas si es necesario */
     z-index: 1;
 }
-
