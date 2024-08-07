@@ -1,224 +1,210 @@
 html {
     font-size: 16px; /* Esto define 1rem = 16px */
 }
-body {
+body {  /* General */
     margin: 0;
     padding: 0;
-    background-color: #181818;
+    background-image: url(/img/img\ vaca.jpg);
+    background-image: url(/img/img\ nature.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #000000;
-    font-family: 'Eczar', sans-serif;
 }
 
-.navbar {
+.navbar {  /* Barra de navegacion superior */
     position: relative;
     display: flex;
     font-family: 'Eczar', sans-serif;
     align-items: center;
     justify-content: space-between;
-    background-color: #000000;
-    padding: 0 1.875rem; /* 30px */
+    background-color: #00000030;
+    padding: 0px 30px;
     text-align: center;
-    border-bottom: 1px solid #ffffff;
-    z-index: 1000;
+    border-bottom: 1px solid #00000030;
 }
 
-.icono-logo {
-    border: 1px solid #ffffff;
+.icono-logo {  /* Logo */
+    border: 1px solid #ffffff30;
     overflow: hidden;
     object-fit: cover;
     border-radius: 100%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 2.5rem; /* 40px */
-    height: 2.5rem; /* 40px */
-    margin-top: 0.625rem; /* 10px */
-    margin-left: -1.0625rem; /* -17px */
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: -17px;
     position: relative;
 }
 
-nav {
+nav {  /* Navegacion */
     display: flex;
     align-items: center;
 }
 
-.nav-links li {
-    margin-right: 2.5rem; /* 40px */
+.nav-links li {  /* Elementos de la barra de navegación */
+    margin-right: 40px;
 }
 
-.nav-links {
+.nav-links {  /* Lista de enlaces de navegación */
     list-style: none;
     display: flex;
-    gap: 0.9375rem; /* 15px */
+    gap: 15px;
 }
 
-.nav-links a {
-    color: white;
+.nav-links a {  /* Enlaces de navegación */
+    color: #ffffff;
     letter-spacing: 1.5px;
     text-decoration: none;
-    font-size: 1rem; /* 16px */
-    padding: 1.0625rem 1.25rem; /* 17px 20px */
+    font-size: 16px;
+    padding: 17px 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .navbar li:nth-child(1) a:hover,
-.navbar li:nth-child(5) a:hover {
+.navbar li:nth-child(5) a:hover {  /* Efecto hover en el primer y último enlace de navegación */
     text-decoration: underline;
-    background-color: #000000;
+    background-color: #00000000;
 }
 
-.nav-links li:last-child {
+.nav-links li:last-child {  /* Último enlace de navegación */
     margin-right: 0;
 }
 
-.content {
+
+.content {  /* Contenido principal */
     position: relative;
     height: 65vh;
     text-align: left;
 }
 
-@font-face {
+@font-face {  /* Fuente personalizada */
     font-family: 'Hatton';
     src: url('/fonts/PP\ Hatton\ Medium\ 500.otf') format('truetype');
 }
 
-.main-text {
+.main-text {  /* Texto principal */
     position: absolute;
-    top: 5.625rem; /* 90px */
-    left: 76%; /* Mantener en porcentaje */
-    transform: translateX(-50%);
-    font-size: 7.1875rem; /* 115px */
+    top: 25%;
+    left: 10%;
+    font-size: 7rem;
     font-family: 'Hatton', sans-serif;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
     line-height: 1.0;
     margin: 0;
-    text-align: left;
-    z-index: 3;
+    z-index: 0;
 }
 
-.contact-info {
-    position: fixed;
-    top: 23.75rem; /* 380px */
-    left: 72%; /* Mantener en porcentaje */
+.contact-info {  /* Información de contacto */
+    position: absolute;
+    top: 57%;
+    left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
     color: #ffffff;
-    font-size: 1.5625rem; /* 25px */
-    text-align: left;
-    letter-spacing: 1px;
-    margin: 0;
-    font-family: 'Hatton', sans-serif;
-    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    line-height: 0.8;
     z-index: 2;
 }
 
-.info-item {
-    margin-bottom: 5rem; /* 80px */
-    line-height: 1.1;
-}
-
-.info-title {
-    font-size: 2.8125rem; /* 45px */
-    margin: 0.3125rem 0; /* 5px */
+.contact-info {  /* Detalles de contacto */
+    flex: 1;
+    font-size: 1.5rem;
+    text-align: left;
     font-family: 'Hatton', sans-serif;
 }
 
-.info-contents p {
-    margin: 0.3125rem 0; /* 5px */
+.info-item strong{  /* Elementos de información de contacto */
+    flex: 1;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Hatton', sans-serif;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {  /* Estilos responsivos para pantallas pequeñas */
     .main-text {
         font-size: 10vw;
     }
     .sub-text {
         font-size: 4vw;
     }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-info .info-item {
+        margin-bottom: 1rem; 
+    }
 }
 
-.footer-content {
+.footer-content {  /* Contenido del pie de página */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 0px 0px;
     position: absolute;
     bottom: 0;
     width: 98.5%;
     color: #ffffff;
-    font-size: 0.875rem; /* 14px */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
     font-family: 'Sedan SC', sans-serif;
+    bottom: 0px;
 }
 
-.footer-left {
-    font-size: 1.375rem; /* 22px */
-    margin-left: 1.25rem; /* 20px */
+.footer-left {  /* Pie de página izquierdo */
+    font-size: 22px;
+    margin-left: 20px;
 }
 
-.footer-right {
+.footer-right {  /* Pie de página derecho */
     display: flex;
 }
 
-.footer-right a {
-    margin-left: 1.875rem; /* 30px */
-    font-size: 1.125rem; /* 18px */
-    width: 2.375rem; /* 38px */
-    height: 2.375rem; /* 38px */
+.footer-right a {  /* Enlaces del pie de página derecho */
+    margin-left: 30px;
+    font-size: 18px;
+    width: 38px;
+    height: 38px;
 }
-
-.dropdown {
+.dropdown {  /* Barra desplegable */
     position: relative;
 }
 
-.dropdown-content {
+.dropdown-content {  /* Contenido de la barra desplegable*/
     display: none;
     position: absolute;
-    background-color: #000000;
-    min-width: 9.375rem; /* 150px */
+    background-color: #00000030;
+    min-width: 150px;
     z-index: 1;
     font-family: "Saira", sans-serif;
-    top: 2.8125rem; /* 45px */
+    top: 45px;
     left: 50%;
     transform: translateX(-50%);
-    border-left: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid #00000030;
+    border-right: 1px solid #00000030;
+    border-bottom: 1px solid #00000030;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {  /* Mostrar contenido de la barra desplegable */
     display: block;
 }
 
-.dropdown-content a {
+.dropdown-content a {  /* Enlaces de la barra desplegable */
     color: white;
-    padding: 0.3125rem 0.9375rem; /* 5px 15px */
+    padding: 5px 15px;
     text-decoration: none;
     display: block;
     font-family: 'Saira', sans-serif;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover {  /* Efecto hover en enlaces de la barra desplegable */
     background-color: #ffffff67;
     text-decoration: none;
-}
-
-.image-container {
-    width: 50vw; /* Mantener en % para ser responsivo */
-    height: 140vh; /* Mantener en vh para ser responsivo */
-    overflow: hidden;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
-
-.contact-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    top: 63px; /* Puedes cambiar esto a unidades relativas si es necesario */
-    z-index: 1;
 }
