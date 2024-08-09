@@ -122,15 +122,13 @@ nav {  /* Navegación */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 0px;
     position: absolute;
     bottom: 0;
-    width: 98.5%;
+    width: 100%;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 14px;
     font-family: 'Sedan SC', sans-serif;
-    bottom: 0px;
+    transform: translateY(0vw);
 }
 
 .footer-left {  /* Pie de página izquierdo */
@@ -140,6 +138,7 @@ nav {  /* Navegación */
 
 .footer-right {  /* Pie de página derecho */
     display: flex;
+    padding-right: 1.5rem;
 }
 
 .footer-right a {  /* Enlaces del pie de página derecho */

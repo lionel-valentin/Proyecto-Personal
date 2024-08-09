@@ -14,6 +14,7 @@ body {  /* General */
     font-family: 'Eczar', sans-serif;
 }
 
+
 .navbar {  /* Barra de navegación superior */
     position: relative;
     display: flex;
@@ -86,27 +87,31 @@ nav {  /* Navegación */
 
 .main-text {  /* Texto principal */
     position: absolute;
-    top: 300px;
-    left: 130px;
-    font-size: 130px;
-    font-family: 'Kaisei Decol', sans-serif;
+    top: 20%;
+    left: 5%;
+    font-size: 7rem;
+    font-family: 'Hatton', sans-serif;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
     line-height: 1.0;
     margin: 0;
+    z-index: 0;
 }
 
 .sub-text {  /* Texto secundario */
     position: absolute;
-    top: 580px;
-    left: 170px;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    top: 50%;
+    left: 7%;
+    right: 60%;
+    font-size: 1rem; /* Ajusta este tamaño según sea necesario */
+    font-family: 'Amaranth', sans-serif;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     margin: 0;
+    line-height: 1.7; /* Ajusta este espaciado según sea necesario */
+    text-align: justify; /* Justifica el texto */
 }
 
 @media (max-width: 600px) {  /* Estilos responsivos para pantallas pequeñas */
@@ -122,15 +127,13 @@ nav {  /* Navegación */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 0px;
     position: absolute;
     bottom: 0;
-    width: 98.5%;
+    width: 100%;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 14px;
     font-family: 'Sedan SC', sans-serif;
-    bottom: 0px;
+    transform: translateY(18vw);
 }
 
 .footer-left {  /* Pie de página izquierdo */
@@ -140,6 +143,7 @@ nav {  /* Navegación */
 
 .footer-right {  /* Pie de página derecho */
     display: flex;
+    padding-right: 1.5rem;
 }
 
 .footer-right a {  /* Enlaces del pie de página derecho */
@@ -183,4 +187,19 @@ nav {  /* Navegación */
 .dropdown-content a:hover {  /* Efecto hover en enlaces de la barra desplegable */
     background-color: #ffffff67;
     text-decoration: none;
+}
+
+.mi-imagen {
+    border: 3px solid white; /* Marco blanco de 3px */
+    border-radius: 7%; /* Esquinas semicirculares */
+    max-width: 40rem; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    position: absolute; /* Posición absoluta para moverla libremente */
+    top: 30%; /* Posición inicial en la parte superior */
+    left: 57%; /* Posición inicial en la parte izquierda */
+    transition: all 0.3s ease-in-out; /* Transición suave para hover */
+}
+
+.mi-imagen:hover {
+    transform: scale(1.05); /* Efecto de zoom en hover */
 }
