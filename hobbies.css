@@ -4,8 +4,7 @@ html {
 body {  /* General */
     margin: 0;
     padding: 0;
-    background-image: url(/img/img\ nature.jpg);
-    background-image: url(/img/img\ vaca.jpg);
+    background-image: url(/img/img-vaca.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
